@@ -17,7 +17,7 @@ python distill_high_order_spl.py --cfg ../exp_configs/xxxx.yaml
 ## Evaluation on the distilled datasets
 ```
 cd distill
-python evaluation.py --lr_dir=path_to_lr --data_dir=path_to_images --label_dir=path_to_labels --zca
+python evaluation.py --lr_dir=path_to_lr --data_dir=path_to_images --label_dir=path_to_labels
 ```
 ## Acknowledgement
 Our code is built upon [DATM](https://github.com/NUS-HPC-AI-Lab/DATM), thanks for their inspiring work!
