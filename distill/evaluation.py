@@ -64,9 +64,8 @@ def main(args):
     soft_cri = SoftCrossEntropy
 
     image_syn_eval = torch.load(args.data_dir)
-    print(image_syn_eval.shape)
     label_syn_eval = torch.load(args.label_dir)
-    args.lr_net = torch.tensor(0.0124)
+    args.lr_net = torch.load(args.lr_dir)
 
     for model_eval in model_eval_pool:
         accs_test = []
